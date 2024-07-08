@@ -52,6 +52,48 @@ Circuit Digram:
   
 * Connect the ground terminal of the external power supply to the ground rail on the breadboard. Ensure this is also connected to the Arduino's GND to maintain a common ground.
 
+## The Code:
+```
+#include <Servo.h>
+
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+Servo servo5;
+Servo servo6;
+
+void setup() {
+  servo1.attach(3);  // Attach servo 1 to pin 3
+  servo2.attach(5);  // Attach servo 2 to pin 5
+  servo3.attach(6);  // Attach servo 3 to pin 6
+  servo4.attach(9);  // Attach servo 4 to pin 9
+  servo5.attach(10); // Attach servo 5 to pin 10
+  servo6.attach(11); // Attach servo 6 to pin 11
+}
+
+void loop() {
+  for (int pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    servo1.write(pos);
+    servo2.write(pos);
+    servo3.write(pos);
+    servo4.write(pos);
+    servo5.write(pos);
+    servo6.write(pos);
+    delay(15); // waits 15ms for the servos to reach the position
+  }
+  for (int pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    servo1.write(pos);
+    servo2.write(pos);
+    servo3.write(pos);
+    servo4.write(pos);
+    servo5.write(pos);
+    servo6.write(pos);
+    delay(15); // waits 15ms for the servos to reach the position
+  }
+}
+```
+
 ## Concuusion:
 This setup ensures that each of the six servo motors is properly powered and can receive control signals from the Arduino. By following the steps outlined above, the circuit can be successfully assembled to control multiple servo motors for various applications.
 
