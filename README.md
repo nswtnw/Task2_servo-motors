@@ -7,7 +7,7 @@ This report describes the setup of a circuit that uses an Arduino Uno to control
 * 6 Servo Motors
 * Wires
 ## Simulation 
-![Circuit diagram.](https://www.tinkercad.com/things/3171wNYzHIQ-sizzling-bojo)
+![image](https://github.com/nswtnw/Task2_servo-motors/assets/173661012/f5356df0-311b-406d-a7c8-f70c18da3de1)
 ## Step to Step the Circuit:
 1. Arduino Setup:
    Place the Ardunio Uno on and ensure it is properly powered via USB or an external power source>
