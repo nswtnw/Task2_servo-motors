@@ -10,6 +10,7 @@ This report describes the setup of a circuit that uses an Arduino Uno to control
   
 ## Simulation:
 Circuit Digram: 
+
 ![image](https://github.com/nswtnw/Task2_servo-motors/assets/173661012/f5356df0-311b-406d-a7c8-f70c18da3de1)
 
 ## Step to Step the Circuit:
